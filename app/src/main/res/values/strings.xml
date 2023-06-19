@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JetSurvey</string>
+    <string name="app_description">Better surveys with Normal Views</string>
+    <string name="form_action">Sign in or create an account</string>
+    <string name="sign_in_normal">Continue</string>
+    <string name="or">or</string>
+    <string name="sign_in_guest">Sign in as guest</string>
+    <string name="email_hint">Email</string>
+    <string name="app_logo">App Logo</string>
+</resources>
