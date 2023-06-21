@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginOptionsFragment">
+
+    <fragment
+        android:id="@+id/loginOptionsFragment"
+        android:name="com.helder.jetsurvey.ui.fragments.LoginOptionsFragment"
+        android:label="fragment_login_options"
+        tools:layout="@layout/fragment_login_options">
+        <action
+            android:id="@+id/action_loginOptionsFragment_to_signInActivity"
+            app:destination="@id/signInActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/signInActivity"
+        android:name="com.helder.jetsurvey.ui.activities.SignInActivity"
+        android:label="activity_sign_in"
+        tools:layout="@layout/activity_sign_in"/>
+    <fragment
+        android:id="@+id/navigationButtonsFragment"
+        android:name="com.helder.jetsurvey.ui.fragments.NavigationButtonsFragment"
+        android:label="fragment_navigation_buttons"
+        tools:layout="@layout/fragment_navigation_buttons" />
+</navigation>

@@ -2,9 +2,15 @@
     <string name="app_name">JetSurvey</string>
     <string name="app_description">Better surveys with Normal Views</string>
     <string name="form_action">Sign in or create an account</string>
-    <string name="sign_in_normal">Continue</string>
+    <string name="continue_sign_in">Continue</string>
     <string name="or">or</string>
     <string name="sign_in_guest">Sign in as guest</string>
     <string name="email_hint">Email</string>
     <string name="app_logo">App Logo</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="previous_action">Previous</string>
+    <string name="next_action">Next</string>
 </resources>
