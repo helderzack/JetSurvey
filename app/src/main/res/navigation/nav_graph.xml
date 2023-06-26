@@ -28,8 +28,19 @@
     <fragment
         android:id="@+id/freeTimeActivitiesFragment"
         android:name="com.helder.jetsurvey.ui.fragments.FreeTimeActivitiesFragment"
-        android:label="fragment_free_time_activieis"
+        android:label="fragment_free_time_activities"
         tools:layout="@layout/fragment_free_time_activities">
-
+        <action
+            android:id="@+id/action_freeTimeActivitiesFragment_to_comicCharacterFragment"
+            app:destination="@id/comicCharacterFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/comicCharacterFragment"
+        android:name="com.helder.jetsurvey.ui.fragments.ComicCharacterFragment"
+        android:label="fragment_comic_character"
+        tools:layout="@layout/fragment_comic_character">
+        <action
+            android:id="@+id/action_comicCharacterFragment_to_freeTimeActivitiesFragment"
+            app:destination="@id/freeTimeActivitiesFragment"/>
     </fragment>
 </navigation>

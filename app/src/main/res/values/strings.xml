@@ -20,6 +20,11 @@
     <string name="checkbox_work_out">Work out</string>
     <string name="checkbox_draw">Draw</string>
     <string name="checkbox_play_video_games">Play video games</string>
-    <string name="fist_step_number">1</string>
+    <string name="fist_step">1</string>
     <string name="number_of_steps">of 5</string>
+    <string name="spark_character">Spark</string>
+    <string name="lenz_character">Lenz</string>
+    <string name="bug_of_chaos_character">Bug of Chaos</string>
+    <string name="frag_character">Frag</string>
+    <string name="second_step">2</string>
 </resources>
