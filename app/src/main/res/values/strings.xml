@@ -14,4 +14,12 @@
     <string name="previous_action">Previous</string>
     <string name="next_action">Next</string>
     <string name="return_to_home">Return to Home</string>
+    <string name="survey_first_question">In my free time I like to…</string>
+    <string name="survey_selection">Select all that apply.</string>
+    <string name="checkbox_read">Read</string>
+    <string name="checkbox_work_out">Work out</string>
+    <string name="checkbox_draw">Draw</string>
+    <string name="checkbox_play_video_games">Play video games</string>
+    <string name="fist_step_number">1</string>
+    <string name="number_of_steps">of 5</string>
 </resources>

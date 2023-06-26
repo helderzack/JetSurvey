@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_homeFragment_to_signInFragment"
             app:destination="@id/signInFragment"/>
+        <action
+            android:id="@+id/action_homeFragment_to_freeTimeActivitiesFragment"
+            app:destination="@id/freeTimeActivitiesFragment" />
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
@@ -21,5 +24,12 @@
         <action
             android:id="@+id/action_signInFragment_to_homeFragment"
             app:destination="@id/homeFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/freeTimeActivitiesFragment"
+        android:name="com.helder.jetsurvey.ui.fragments.FreeTimeActivitiesFragment"
+        android:label="fragment_free_time_activieis"
+        tools:layout="@layout/fragment_free_time_activities">
+
     </fragment>
 </navigation>

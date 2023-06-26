@@ -28,5 +28,10 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
             val action = HomeFragmentDirections.actionHomeFragmentToSignInFragment()
             view.findNavController().navigate(action)
         }
+
+        binding.buttonSignInGuest.setOnClickListener {
+            val action = HomeFragmentDirections.actionHomeFragmentToFreeTimeActivitiesFragment()
+            view.findNavController().navigate(action)
+        }
     }
 }
