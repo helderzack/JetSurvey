@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.helder.jetsurvey.R
-import com.helder.jetsurvey.databinding.FragmentComicCharacterBinding
+import com.helder.jetsurvey.databinding.FragmentOrderDateBinding
 
-class ComicCharacterFragment: Fragment(R.layout.fragment_comic_character) {
-    private lateinit var binding: FragmentComicCharacterBinding
+class OrderDateFragment: Fragment(R.layout.fragment_order_date) {
+    private lateinit var binding: FragmentOrderDateBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -18,7 +18,8 @@ class ComicCharacterFragment: Fragment(R.layout.fragment_comic_character) {
         savedInstanceState: Bundle?
     ): View {
         super.onCreateView(inflater, container, savedInstanceState)
-        binding = FragmentComicCharacterBinding.inflate(layoutInflater)
+
+        binding = FragmentOrderDateBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -26,12 +27,7 @@ class ComicCharacterFragment: Fragment(R.layout.fragment_comic_character) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.materialButtonPrevious.setOnClickListener {
-            val action = ComicCharacterFragmentDirections.actionComicCharacterFragmentToFreeTimeActivitiesFragment()
-            findNavController().navigate(action)
-        }
-
-        binding.materialButtonNext.setOnClickListener {
-            val action = ComicCharacterFragmentDirections.actionComicCharacterFragmentToOrderDateFragment()
+            val action = OrderDateFragmentDirections.actionOrderDateFragmentToComicCharacterFragment()
             findNavController().navigate(action)
         }
     }

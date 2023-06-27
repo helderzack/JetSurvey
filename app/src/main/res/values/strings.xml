@@ -27,4 +27,9 @@
     <string name="bug_of_chaos_character">Bug of Chaos</string>
     <string name="frag_character">Frag</string>
     <string name="second_step">2</string>
+    <string name="third_step">3</string>
+    <string name="survey_third_question">When was the last time you ordered takeaway because you couldn\'t be bothered to cook?</string>
+    <string name="survey_second_question">Pick a Views comic character</string>
+    <string name="survey_character_selection">Select one.</string>
+    <string name="survey_date_selection">Select date.</string>
 </resources>

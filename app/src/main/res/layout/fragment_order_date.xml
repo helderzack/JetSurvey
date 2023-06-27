@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.05" />
+        app:layout_constraintGuide_percent="0.05"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.95"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintGuide_percent="0.95"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineStart"
         android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="?attr/colorPrimary"
-            android:text="@string/second_step"/>
+            android:text="@string/third_step"/>
         <TextView
             android:id="@+id/textViewFinalStep"
             android:layout_width="wrap_content"
@@ -59,78 +59,45 @@
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintVertical_chainStyle="spread_inside"
-        android:progress="50"/>
+        android:progress="25"/>
     <TextView
         android:id="@+id/textViewSurveyQuestion"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/linearProgressIndicator"
-        app:layout_constraintBottom_toTopOf="@id/textViewSelection"
+        app:layout_constraintBottom_toTopOf="@id/textViewDateSelection"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        android:layout_marginHorizontal="20dp"
         android:textSize="16sp"
-        android:text="@string/survey_second_question"/>
+        android:breakStrategy="balanced"
+        android:text="@string/survey_third_question"/>
     <TextView
-        android:id="@+id/textViewSelection"
+        android:id="@+id/textViewDateSelection"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/textViewSurveyQuestion"
-        app:layout_constraintBottom_toTopOf="@id/radioGroupComicCharacterChoices"
+        app:layout_constraintBottom_toTopOf="@id/textViewDatePicker"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
-        android:text="@string/survey_character_selection"/>
-    <RadioGroup
-        android:id="@+id/radioGroupComicCharacterChoices"
+        android:text="@string/survey_date_selection"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textViewDatePicker"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:gravity="center_vertical"
-        app:layout_constraintTop_toBottomOf="@id/textViewSelection"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_max="320dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewDateSelection"
         app:layout_constraintBottom_toTopOf="@id/linearLayoutActions"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
-        app:layout_constraintEnd_toEndOf="@id/guidelineEnd">
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintWidth_max="320dp"
-            android:paddingVertical="36dp"
-            android:paddingHorizontal="16dp"
-            android:layout_marginVertical="20dp"
-            android:text="@string/spark_character"
-            android:background="@drawable/border" />
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintWidth_max="320dp"
-            android:paddingVertical="36dp"
-            android:paddingHorizontal="16dp"
-            android:layout_marginVertical="20dp"
-            android:text="@string/lenz_character"
-            android:background="@drawable/border"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintWidth_max="320dp"
-            android:paddingVertical="36dp"
-            android:paddingHorizontal="16dp"
-            android:layout_marginVertical="20dp"
-            android:text="@string/bug_of_chaos_character"
-            android:background="@drawable/border"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintWidth_max="320dp"
-            android:paddingVertical="36dp"
-            android:paddingHorizontal="16dp"
-            android:layout_marginVertical="20dp"
-            android:text="@string/frag_character"
-            android:background="@drawable/border"/>
-    </RadioGroup>
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textAllCaps="false"
+        tools:text="qua,jun 14" />
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayoutActions"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/radioGroupComicCharacterChoices"
+        app:layout_constraintTop_toBottomOf="@id/textViewDatePicker"
         app:layout_constraintBottom_toTopOf="@id/guidelineBottom"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd">

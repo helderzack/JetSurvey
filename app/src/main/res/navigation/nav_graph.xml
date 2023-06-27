@@ -42,5 +42,17 @@
         <action
             android:id="@+id/action_comicCharacterFragment_to_freeTimeActivitiesFragment"
             app:destination="@id/freeTimeActivitiesFragment"/>
+        <action
+            android:id="@+id/action_comicCharacterFragment_to_orderDateFragment"
+            app:destination="@id/orderDateFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/orderDateFragment"
+        android:name="com.helder.jetsurvey.ui.fragments.OrderDateFragment"
+        android:label="fragment_order_date"
+        tools:layout="@layout/fragment_order_date">
+        <action
+            android:id="@+id/action_orderDateFragment_to_comicCharacterFragment"
+            app:destination="@id/comicCharacterFragment"/>
     </fragment>
 </navigation>
